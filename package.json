@@ -539,7 +539,8 @@
     "gulp-tslint": "^8.1.1",
     "gulp-typings": "^2.0.4",
     "merge-stream": "^1.0.1",
-    "mocha": "^3.4.2",
+    "mocha": "^3.5.3",
+    "spectron": "^3.7.2",
     "tslint": "^5.5.0",
     "typescript": "^2.5.3",
     "vscode": "^1.1.6"
