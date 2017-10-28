@@ -1,21 +1,33 @@
 // A simple test to verify a visible window is opened with a title
-var Application = require('spectron').Application
-var assert = require('assert')
+import { Application } from 'spectron';
+// var assert = require('assert')
+import * as assert from 'assert';
 
-var app = new Application({
+let app = new Application({
   path: '/usr/bin/code',
   args: ['--skip-getting-started']
 })
+
+// async function runtest() {
+//   await app.start();
+//   // app.browserWindow.().then((isVisible) => console.log(isVisible))
+//   const isVisible = await app.browserWindow();
+
+//   // console.log(app.browserWindow.isVisible()
+//   // console.log(app.client.getTitle())
+// }
+// runtest();
 
 app.start().then(function () {
   // Check if the window is visible
   return app.browserWindow.isVisible()
 }).then(function (isVisible) {
   // Verify the window is visible
+  console.log(isVisible)
   assert.equal(isVisible, true)
 }).then(function () {
-  // Get the window's title
-  return app.client.getTitle()
+  // Get the winow's title
+  return app.browserWindow.getTitle()
 }).then(function (title) {
   // Verify the window's title
   assert.equal(title, 'My App')
