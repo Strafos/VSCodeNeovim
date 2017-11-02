@@ -30,7 +30,7 @@ describe('application launch', function () {
     //     console.log('The clipboard text is ' + clipboardText)
     //   })
 
-    app.electron.BrowserWindow
+    // app.electron.BrowserWindow
     app.client.waitUntilWindowLoaded().then(function () {
       // app.browserWindow.close();
       // for (let i = 0; i < 1000000000; i++) {

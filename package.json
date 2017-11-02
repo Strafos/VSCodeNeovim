@@ -523,7 +523,6 @@
     "aurelia-task-queue": "^1.2.1",
     "clipboardy": "^1.1.4",
     "diff-match-patch": "^1.0.0",
-    "electron": "^1.7.9",
     "lodash": "^4.17.4",
     "neovim": "next",
     "untildify": "^3.0.2",
@@ -533,6 +532,7 @@
   "devDependencies": {
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.47",
+    "electron": "^1.7.9",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.8.0",
     "gulp-git": "^2.4.1",
